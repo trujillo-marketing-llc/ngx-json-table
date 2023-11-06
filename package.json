@@ -1,6 +1,7 @@
 {
   "name": "ngxjsontabletest",
   "version": "0.0.0",
+  "main": "dist/ngx-json-table",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

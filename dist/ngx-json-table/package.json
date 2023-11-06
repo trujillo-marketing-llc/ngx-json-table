@@ -1,0 +1,29 @@
+{
+  "name": "ngx-json-table",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^16.2.0",
+    "@angular/core": "^16.2.0"
+  },
+  "allowedNonPeerDependencies": {
+    "lodash": "^4.17.21",
+    "@angular/forms": "^12.0.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2022/ngx-json-table.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-json-table.mjs",
+      "esm": "./esm2022/ngx-json-table.mjs",
+      "default": "./fesm2022/ngx-json-table.mjs"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+export type JsonValueType = 'bigint' | 'number' | 'string' | 'object' | 'boolean' | 'function' | 'symbol' | 'undefined';
+export declare class JsonTreeNode {
+    id: string;
+    key: string;
+    prevKey: string;
+    value: any;
+    prevValue: any;
+    level: number;
+    type: JsonValueType;
+    isArray: boolean;
+    parent: JsonTreeNode;
+    children: JsonTreeNode[];
+    showChildren: boolean;
+    edit: boolean;
+    showEditPanel: boolean;
+    error: boolean;
+    isNew: boolean;
+    constructor(key: string, value: any, type: JsonValueType, level?: number, isArray?: boolean, parent?: JsonTreeNode, children?: JsonTreeNode[], showChildren?: boolean);
+    toggleShowChildren(allLevels?: boolean): void;
+    checkNotUniqueKey(): boolean;
+    toggleEdit(): void;
+    addChild(child: JsonTreeNode): void;
+    canAppear(): boolean;
+    private canAppearCheck;
+    get isComplex(): boolean;
+    isKeyEditable(): boolean;
+    resetState(): void;
+    updateState(): void;
+    delete(): void;
+}
